@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<style>
+    * {
+        font-family: sans-serif;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+
+    body {
+        width: 100%;
+        height: 100%;
+        background-color: rgb(236, 228, 228)
+    }
+
+    .navbar {
+
+        position: absolute;
+        width: 1440px;
+        height: 85px;
+        left: 0px;
+        top: 0px;
+        background: #FFFFFF;
+    }
+
+    .nav {
+        display: flex;
+        margin: 10px;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .nav_1 {
+        display: inline-flex;
+        align-items: center;
+
+    }
+
+    .nav_1 i {
+        font-size: 40px;
+        padding: 10px;
+        margin-left: -45px;
+        color: #3683F0;
+    }
+
+    .nav_2 {}
+
+    .nav_2 input {
+        outline: none;
+        border: none;
+        font-size: 14px;
+        line-height: 21px;
+        font-family: poppins;
+        Width: 367.89px;
+        height: 21px;
+        left: 529.111328125px;
+        top: 36px;
+
+    }
+
+    .nav_3 {}
+
+    .nav_3 .btn {
+        padding: 12px 24px;
+        Width: 148px;
+        background-color: #3354FF;
+        border-radius: 4px;
+
+    }
+
+    .nav_4 {
+        display: inline-flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .nav_4 .icon {
+        padding: 2px;
+        padding-top: 8px;
+        color: white;
+        text-align: center;
+        background-color: #3683F0;
+        border-radius: 50%;
+        margin: 5px;
+        width: 30px;
+        height: 30px;
+        left: 1217px;
+
+    }
+
+    .icon:hover {
+        /* display: contents; */
+        font-size: 1.01rem;
+        cursor: pointer;
+    }
+
+
+
+    .box1_a {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        width: 459px;
+        height: 275px;
+        left: 10px;
+        top: 97px;
+        background: #FFFFFF;
+        box-shadow: 0px 24px 25px -10px rgba(182, 194, 240, 0.54);
+        border-radius: 5px;
+    }
+
+    .box1 {
+        display: flex;
+    }
+
+    .part_a {
+        display: flex;
+    }
+
+    .part_b {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .part_b h4 {
+        height: 0;
+        margin-top: 12px;
+        margin-bottom: 30px;
+        margin-left: 16px;
+    }
+
+    .small_box {
+        display: flex;
+        position: relative;
+        top: 29px;
+        margin: 5px;
+    }
+
+
+    .small_1 {
+        padding: 8px;
+        background: #FAFAFA;
+        width: 76px;
+        height: 50px;
+        margin: 5px;
+        text-align: center;
+    }
+
+    .small_1:hover h6 {
+        color: blue;
+    }
+
+    /* -------------------box1_b---------------------  */
+    .box1_b {
+        position: absolute;
+        z-index: -2;
+        width: 902px;
+        top: 99px;
+        left: 480px;
+        height: 275px;
+        background: #FFFFFF;
+        border-radius: 5px;
+        box-shadow: 0px 24px 25px -10px rgba(182, 194, 240, 0.54);
+    }
+
+    .box_b1 {
+        padding-left: 40px;
+    }
+
+    .box1_b .btn {
+        background-color: #3354FF;
+        ;
+        margin: 20px;
+        width: 180px;
+        text-align: center;
+        font-weight: 700;
+        padding: 15px;
+        color: white;
+        cursor: pointer;
+        border-radius: 2px;
+    }
+
+
+    /* ---------------------------box2-------------- */
+    .box2 {
+        display: flex;
+    }
+
+    .box2_a {
+        padding: 5px;
+        border-radius: 5px;
+        margin-left: 5px;
+        background-color: #FFFFFF;
+        position: absolute;
+        width: 450px;
+        height: 563.72px;
+        left: 4px;
+        top: 380px;
+    }
+
+    .box2_a1 {
+        display: flex;
+    }
+
+    .box2_a1 {
+        display: flex;
+        margin-left: 5px;
+    }
+
+    .box2_a1_aa {
+        width: 500px;
+        display: flex;
+        align-self: center;
+        justify-content: space-around;
+    }
+
+    .box2_a1_aa .icon {
+        padding: 20px;
+    }
+
+    .box2_a1_ab {
+        display: inline-flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .box2_a1_b {
+        margin-left: -28px;
+        padding-left: 25px;
+    }
+
+    .box2_a1_b img {
+        height: 60%;
+        width: 60%;
+        background-position: center;
+        border-radius: 100%;
+        margin: 0;
+        padding: 5px;
+
+    }
+
+    .box2_a1_b1 {
+        display: inline-flex;
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+    .box2_a1_b1 h6 {
+        padding: 10px;
+    }
+
+    .box2_a1_ba h5 {
+        margin: 12px;
+        margin-right: 10px;
+    }
+
+    .box2_a1_ba {
+        text-align: center;
+    }
+
+    /* ------------------BOX2_B  */
+    .box2_b {
+        background-color: #FFFFFF;
+        margin: 8px;
+        padding: 5px;
+        width: 899px;
+        height: 560px;
+        position: absolute;
+        left: 470px;
+        top: 373px;
+        border-radius: 5px;
+    }
+
+    .box2_b1 {
+        display: flex;
+        justify-content: space-around;
+        margin-top: -15px;
+    }
+
+    .box2_b1_a {
+        margin: -5px;
+        margin-top: 2px;
+        color: #3683F0;
+        display: inline-flex;
+        text-align: center;
+    }
+
+
+    /* ----------------tables:----------- */
+
+
+    table tr {
+        display: inline-flex;
+        margin: -2px;
+    }
+
+
+    .heading {
+        padding: 60px;
+        padding-top: 0px;
+        padding-bottom: 0;
+
+    }
+
+    .S_no tr:hover td {
+        transform: translateY(-2px);
+        background: #FAFAFA;
+        box-shadow: 0px 14px 20px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        border-radius: 10px;
+        /* width: 796px; */
+        /* height: 57px; */
+    }
+
+    #date {
+        padding-top: 0px;
+        margin: 0px;
+        padding-bottom: 0;
+        margin-left: 40px;
+        text-align: center;
+    }
+
+    #date h5 {
+        text-align: center;
+        margin-top: 0px;
+        margin: 0px;
+        font-size: 12px;
+        padding: 5px;
+
+    }
+
+    #session {
+        display: inline-flex;
+        padding-top: 0px;
+        padding-bottom: 0;
+        margin: 0px;
+        margin-left: 40px;
+        text-align: center;
+        padding-right: 111px;
+    }
+
+    #session h4 {
+        margin-inline-start: 10px;
+        margin-inline-start: 100px;
+        text-align: center;
+    }
+
+    .btn {
+        background-color: #3683F0;
+        padding: 12px;
+        height: 15px;
+        width: 180px;
+        text-align: center;
+        line-height: 15px;
+        font-weight: 700;
+        font-size: 12px;
+        color: white;
+        cursor: pointer;
+        border-radius: 30px;
+    }
+
+    /* dropdown */
+
+    .von_x {
+        position: absolute;
+        top: 85px;
+        right: 85px;
+        width: 10%;
+        text-align: right;
+        display: none;
+    }
+
+    .boc {
+        background-color: #3354FF;
+        border-radius: 5px;
+        height: 120px;
+    }
+
+    .boc a {
+        text-decoration: none;
+        font-size: 13px;
+        color: #FFFFFF;
+        text-align: left;
+        padding: 10px;
+    }
+
+    .fa-ellipsis-v:hover .von_x {
+        display: block;
+    }
+
+    .von_n {
+        position: absolute;
+        top: 85px;
+        right: 155px;
+        width: 28%;
+        z-index: 2;
+        display: none;
+    }
+
+    .bon {
+        background-color: #FFFFFF;
+        border-radius: 5px;
+
+    }
+
+
+    .fa-bell:hover .von_n {
+        display: block;
+    }
+
+    .a {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .a_1 img {
+        width: 70%;
+        height: 70%;
+    }
+
+    .a_1 {
+        flex-basis: 150px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .a_2 {
+        flex-basis: 400px;
+        padding: 0;
+    }
+
+    .a_1,
+    .a_2,
+    .a_3 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        text-align: left;
+        margin: 4px;
+
+    }
+</style>
+
+<body>
+    <div class="body">
+        <div class="navbar">
+            <section>
+                <div class="nav">
+                    <div class="nav_1">
+                        <i class="fab fa-ello"></i>
+                        <h4>DEEP <strong style="color: blue;">THOUGHT</strong></h4>
+                    </div>
+                    <div class="nav_2">
+                        <i class="fas fa-search"></i>
+                        <input type="search" name="" id="" placeholder="search course,student,instructor">
+                    </div>
+                    <div class="nav_3">
+                        <div class="btn">Join Live Class</div>
+                    </div>
+                    <div class="nav_4">
+                        <div class="icon"><i class="fas fa-home"></i></div>
+                        <div class="icon"><i class="fas fa-tools"></i></div>
+                        <div class="icon"><i class="fas fa-bell">
+                                <div class="von_n">
+                                    <div class="bon">
+
+                                        <div class="a">
+                                            <div class="a_1"><img src="Screenshot (35).png" alt=""></div>
+                                            <div class="a_2">
+                                                <h4 style="color: dimgray;padding: 0;height: 0; margin: 15px; ">Sophie
+                                                    Kowalki</h4>
+                                                <h5 style="color: dimgray;padding: 0;height: 0; margin: 15px; ">Combined
+                                                    with a handful
+                                                    of model sentence
+                                                    structures </h5>
+                                                <h6 style="font-size: 7 px;padding: 0;height: 0; margin: 15px;"><strong
+                                                        style="color: #3683F0;">Teacher
+                                                        Feedback</strong>
+                                            </div>
+                                            <div class="a_3">
+                                                <h5 style="color: #3683F0;font-size:10px;height: 0; margin: 15px;  ">34
+                                                </h5>
+                                                <h5 style="color: #696969;font-size:10px;height: 0; margin: 15px;  ">
+                                                    Minutes</h5>
+                                                <h5 style="color: #696969;font-size:10px;height: 0; margin: 15px;  ">Ago
+                                                </h5>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="a">
+                                            <div class="a_1"><img src="Screenshot (33).png" alt=""></div>
+                                            <div class="a_2">
+                                                <h4 style="color: dimgray;padding: 0;height: 0; margin: 15px; ">Sophie
+                                                    Kowalki</h4>
+                                                <h5 style="color: dimgray;padding: 0;height: 0; margin: 15px; ">Combined
+                                                    with a handful
+                                                    of model sentence
+                                                    structures </h5>
+                                                <h6 style="font-size: 7 px;padding: 0;height: 0; margin: 15px;"><strong
+                                                        style="color: #3683F0;">Teacher
+                                                        Feedback</strong>
+                                            </div>
+                                            <div class="a_3">
+                                                <h5 style="color: #3683F0;font-size:10px;height: 0; margin: 15px;  ">34
+                                                </h5>
+                                                <h5 style="color: #696969;font-size:10px;height: 0; margin: 15px;  ">
+                                                    Minutes</h5>
+                                                <h5 style="color: #696969;font-size:10px;height: 0; margin: 15px;  ">Ago
+                                                </h5>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="a">
+                                            <div class="a_1"><img src="Screenshot (40).png" alt=""></div>
+                                            <div class="a_2">
+                                                <h4 style="color: dimgray;padding: 0;height: 0; margin: 15px; ">Sophie
+                                                    Kowalki</h4>
+                                                <h5 style="color: dimgray;padding: 0;height: 0; margin: 15px; ">Combined
+                                                    with a handful
+                                                    of model sentence
+                                                    structures </h5>
+                                                <h6 style="font-size: 7 px;padding: 0;height: 0; margin: 15px;"><strong
+                                                        style="color: #3683F0;">Teacher
+                                                        Feedback</strong>
+                                            </div>
+                                            <div class="a_3">
+                                                <h5 style="color: #3683F0;font-size:10px;height: 0; margin: 15px;  ">34
+                                                </h5>
+                                                <h5 style="color: #696969;font-size:10px;height: 0; margin: 15px;  ">
+                                                    Minutes</h5>
+                                                <h5 style="color: #696969;font-size:10px;height: 0; margin: 15px;  ">Ago
+                                                </h5>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                    </div>
+                                </div>
+                            </i>
+                        </div>
+                        <div class="icon"><i class="fas fa-user"></i>
+                        </div>
+                        <div class="icon"><i class="fas fa-ellipsis-v">
+                                <div class="von_x">
+                                    <div class="boc">
+                                        <a href="#">View profile</a><br>
+                                        <a href="#">Settings</a><br>
+                                        <a href="#">Account</a><br>
+                                        <a href="#">Help section</a><br>
+                                        <a href="#">Logout</a>
+                                    </div>
+                                </div>
+                            </i></div>
+                    </div>
+                </div>
+        </div>
+        </section>
+        <div class="box">
+            <div class="box1">
+                <div class="box1_a">
+                    <h6 style="font-size: 20px; padding: 0;margin: 15px;">WELCOME BACK !!</h6>
+                    <div class="part_a">
+                        <div class="box2_a1_b" style="height:65%; width: 65%;"> <img src="Screenshot (35).png" alt=""
+                                style="border-radius: 50%; "></div>
+                        <div class="part_b">
+                            <h3 style="font-size: 22px;color: #696969;">Sara Denvers</h3>
+                            <h4
+                                style="font-family: Open Sans;font-style: normal;font-weight: normal;font-size: 14px;line-height: 20px; ">
+                                Quisque dignissim tincidunt dolor ac varius. Fusce vel felis scelerisque,
+                                placerat diam non, pretium enim. Etiam quis congue lectus, nec consequat
+                            </h4>
+                            <div class="small_box">
+                                <div class="small_1">
+                                    <h4>13</h4>
+                                    <h6>Asset credited</h6>
+                                </div>
+                                <div class="small_1">
+                                    <h4>13</h4>
+                                    <h6>Asset credited</h6>
+                                </div>
+                                <div class="small_1">
+                                    <h4>13</h4>
+                                    <h6>Asset credited</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box1_b">
+                    <div class="box_b1"
+                        style="color: white;background-color: rgb(24, 132, 233); height: 45px;padding-top:1px; border-top-left-radius: 12px;border-top-right-radius: 12px;">
+                        <h3><i class="far fa-clock"></i> Your Session Is Live !!!</h3>
+                    </div>
+                    <div class="box_b1">
+                        <h3 style="color:rgb(24, 133, 206);">EXPONENTS for POWERPUFF <br><br> GIRLS on 15 Nov, 2021 at 8
+                            PM</h3>
+                    </div>
+                    <div class="box_b1">
+                        <h4 style="color: slategray;">RELATED SESSION : 7 </h4>
+                    </div>
+                    <div class="btn">JOIN SESSION NOW</div>
+                </div>
+            </div>
+            <div class="box2">
+                <div class="box2_a">
+                    <div class="box2_a1">
+                        <div class="box2_a1_aa">
+                            <h4>FEEDBACK RECIEVED</h4>
+                        </div>
+                        <div class="box2_a1_aa">
+                            <div class="icon"><i class="fas fa-search"></i></div>
+                            <div class="icon"><i class="far fa-edit"></i></div>
+                            <div class="icon" style="color: #3683F0;"><i class="fas fa-chevron-circle-down"></i></div>
+                        </div>
+                    </div>
+                    <div class="box2_a1">
+                        <div class="box2_a1_ab">
+                            <div class="box2_a1_b"> <img src="Screenshot (40).png" alt=""></div>
+                            <div class="box2_a1_b">
+                                <div class="box2_a1_b1">
+                                    <h4
+                                        style="height: 0;font-size: 20px; margin-top: 12px;margin-bottom: 0;color: #696969;">
+                                        Sophie
+                                        Kowalki</h4>
+                                </div>
+                                <div class="box2_a1_b1">
+                                    <h5
+                                        style="height: 0;font-size: 14px;margin-top: 12px;margin-bottom: 0;color: #696969   ;">
+                                        Combined
+                                        with a handful of model sentence
+                                        structures ...</h5>
+                                </div>
+                                <div class="box2_a1_b1">
+                                    <h6 style="font-size: 10px;margin-top: 20px;margin-bottom: 0;">For :<strong
+                                            style="color: #3683F0;">Thread Builder</strong>
+                                        <h6 style="font-size: 10px;margin-top: 20px;margin-bottom: 0;">Topic :<strong
+                                                style="color: #3683F0;">Communication</strong>
+
+                                </div>
+                            </div>
+                            <div class="box2_a1_b">
+                                <div class="box2_a1_ba">
+                                    <h5 style="color: #3683F0;">34</h5>
+                                </div>
+                                <div class="box2_a1_ba">
+                                    <h5>Minutes</h5>
+                                </div>
+                                <div class="box2_a1_ba">
+                                    <h5>Ago</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="box2_a1">
+                        <div class="box2_a1_ab">
+                            <div class="box2_a1_b"> <img src="Screenshot (36).png" alt=""></div>
+                            <div class="box2_a1_b">
+                                <div class="box2_a1_b1">
+                                    <h4
+                                        style="height: 0;font-size: 20px; margin-top: 12px;margin-bottom: 0;color: #696969;">
+                                        Sophie
+                                        Kowalki</h4>
+                                </div>
+                                <div class="box2_a1_b1">
+                                    <h5
+                                        style="height: 0;font-size: 14px;margin-top: 12px;margin-bottom: 0;color: #696969;">
+                                        Combined
+                                        with a handful of model sentence
+                                        structures ...</h5>
+                                </div>
+                                <div class="box2_a1_b1">
+                                    <h6 style="font-size: 10px;margin-top: 20px;margin-bottom: 0;">For :<strong
+                                            style="color: #3683F0;">Thread Builder</strong>
+                                        <h6 style="font-size: 10px;margin-top: 20px;margin-bottom: 0;">Topic :<strong
+                                                style="color: #3683F0;">Communication</strong>
+
+                                </div>
+                            </div>
+                            <div class="box2_a1_b">
+                                <div class="box2_a1_ba">
+                                    <h5 style="color: #3683F0;">34</h5>
+                                </div>
+                                <div class="box2_a1_ba">
+                                    <h5>Minutes</h5>
+                                </div>
+                                <div class="box2_a1_ba">
+                                    <h5>Ago</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="box2_a1">
+                        <div class="box2_a1_ab">
+                            <div class="box2_a1_b"> <img src="Screenshot (33).png" alt=""></div>
+                            <div class="box2_a1_b">
+                                <div class="box2_a1_b1">
+                                    <h4
+                                        style="height: 0;font-size: 20px; margin-top: 12px;margin-bottom: 0;color: #696969;">
+                                        Sophie
+                                        Kowalki</h4>
+                                </div>
+                                <div class="box2_a1_b1">
+                                    <h5
+                                        style="height: 0;font-size: 14px;margin-top: 12px;margin-bottom: 0;color: #696969;">
+                                        Combined
+                                        with a handful of model sentence
+                                        structures ...</h5>
+                                </div>
+                                <div class="box2_a1_b1">
+                                    <h6 style="font-size: 10px;margin-top: 20px;margin-bottom: 0;">For :<strong
+                                            style="color: #3683F0;">Thread Builder</strong>
+                                        <h6 style="font-size: 10px;margin-top: 20px;margin-bottom: 0;">Topic :<strong
+                                                style="color: #3683F0;">Communication</strong>
+
+                                </div>
+                            </div>
+                            <div class="box2_a1_b">
+                                <div class="box2_a1_ba">
+                                    <h5 style="color: #3683F0;">34</h5>
+                                </div>
+                                <div class="box2_a1_ba">
+                                    <h5>Minutes</h5>
+                                </div>
+                                <div class="box2_a1_ba">
+                                    <h5>Ago</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div><br>
+                        <h5 style="text-align: center; color: #3683F0;">SEE ALL FEEDBACK</h5>
+                    </div>
+                </div>
+                <div class="box2_b">
+                    <div class="box2_b1">
+                        <div class="box2_b1_a">
+                            <div class="box2_b1_a_1" style="padding: 18px;font-size: 30px;"><i class="far fa-clock"></i>
+                            </div>
+                            <div class="box2_b1_a_1">
+                                <h4>MY UPCOMING SESSION</h4>
+                            </div>
+                        </div>
+                        <div class="box2_b1_a">
+                            <div class="box2_b1_a_1" style="padding: 18px;font-size: 30px; color: #696969;"><i
+                                    class="far fa-clock"></i>
+                            </div>
+                            <div class="box2_b1_a_1">
+                                <h4 style="color: #696969;">MY PREVIOUS SESSION</h4>
+                            </div>
+                        </div>
+                        <div class="box2_b1_a">
+                            <div class="box2_b1_a_1" style="padding-top: 20px;padding-right: 8px;"><i
+                                    class="fas fa-ellipsis-v"></i></div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="box2_b1">
+                        <table>
+                            <tr>
+                                <td class="heading">
+                                    <h4 style="font-size: 16px">Date</h4>
+                                </td>
+                                <td class="heading">
+                                    <h4 style="font-size: 16px">Session Topics & Details</h4>
+                                </td>
+                                <td class="heading">
+                                    <h4 style="font-size: 16px">Session Time</h4>
+                                </td>
+                                <td class="heading">
+                                    <h4 style="font-size: 16px">Related session</h4>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <table class="S_no">
+                        <tr>
+                            <td id="date">
+                                <h5> <strong style="color: #3683F0;">Tommorow</strong>
+                                    <br>10
+                                    <br> Nov</h5>
+                            </td>
+                            <td id="session">
+                                <h4 style="font-size: 12px;">Session for 7 Einsteins on 16
+                                    November 2021 at 8 PM</h4>
+                                <h4 class="btn"> 8:00 PM - 1:00PM</h4>
+                                <h4>0</h4>
+                            </td>
+                        </tr>
+                    </table>
+                    <hr>
+                    <table class="S_no">
+                        <tr>
+                            <td id="date">
+                                <h5> <strong style="color: #3683F0;">Tommorow</strong>
+                                    <br>10
+                                    <br> Nov</h5>
+                            </td>
+                            <td id="session">
+                                <h4 style="font-size: 12px;">Session for 7 Einsteins
+                                    on 16 November 2021 at 8 PM</h4>
+                                <h4 class="btn"> 8:00 PM - 1:00PM</h4>
+                                <h4>0</h4>
+                            </td>
+                        </tr>
+                    </table>
+                    <hr>
+                    <table class="S_no">
+                        <tr>
+                            <td id="date">
+                                <h5> <strong style="color: #3683F0;">Tommorow</strong>
+                                    <br>10
+                                    <br> Nov</h5>
+                            </td>
+                            <td id="session">
+                                <h4 style="font-size: 12px;">Session for 7 Einsteins
+                                    on 16 November 2021 at 8 PM</h4>
+                                <h4 class="btn"> 8:00 PM - 1:00PM</h4>
+                                <h4>0</h4>
+                            </td>
+                        </tr>
+                    </table>
+                    <hr>
+                    <table class="S_no">
+                        <tr>
+                            <td id="date">
+                                <h5> <strong style="color: #3683F0;">Tommorow</strong>
+                                    <br>10
+                                    <br> Nov</h5>
+                            </td>
+                            <td id="session">
+                                <h4 style="font-size: 12px;">Session for 7 Einsteins
+                                    on 16 November 2021 at 8 PM</h4>
+                                <h4 class="btn"> 8:00 PM - 1:00PM</h4>
+                                <h4>0</h4>
+                            </td>
+                        </tr>
+                    </table>
+                    <hr>
+
+                    <div class="box2_b1" style="color: #3683F0;">
+                        <h5>SEE ALL MY SESSIONS</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
